@@ -103,6 +103,84 @@ html, body {
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+    gap: 2rem;
+}
+
+.main__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.changelog {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.changelog h2 {
+    color: #eca742;
+    font-size: 2rem;
+    font-family: calibri;
+    margin: 0;
+}
+
+.changelog__box {
+    background-color: #111111;
+    border-radius: 16px;
+    max-height: 200px;
+    padding: 1.25rem;
+    overflow-y: auto;
+    --scrollbar-bg: #1b1b1b;
+    --scrollbar-thumb: #eca742;
+    --scrollbar-thumb-hover: #f3c787;
+}
+
+.changelog__box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.changelog__box::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+    border-radius: 999px;
+}
+
+.changelog__box::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 999px;
+}
+
+.changelog__box::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+.changelog__box {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+    scrollbar-width: thin;
+}
+
+.changelog__content {
+    color: #f3c787;
+    font-size: 1rem;
+    font-family: calibri, sans-serif;
+    line-height: 1.5;
+    min-height: 100px;
+}
+
+.changelog__entry {
+    margin-bottom: 1rem;
+}
+
+.changelog__entry h3 {
+    margin: 0 0 0.4rem 0;
+    color: #eca742;
+    font-size: 1.1rem;
+    font-family: calibri, sans-serif;
+}
+
+.changelog__entry p {
+    margin: 0;
 }
 
 .main__content {
@@ -158,6 +236,15 @@ html, body {
     display: flex;
     flex-direction: column;
     max-width: 600px;
+}
+
+.showcase__gallery h2 {
+    color: #eca742;
+    font-size: 2.5rem;
+    font-family: calibri;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-self: center;
 }
 
 .showcase__gallery .gallery__img {
