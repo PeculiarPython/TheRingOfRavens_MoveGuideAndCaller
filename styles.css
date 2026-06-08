@@ -7,11 +7,12 @@
 
 html, body {
     background-color: #716f6c;
-    background-image: url("images/CurlLeftSet2.gif");
+    background-image: url("images/BackdropRavenThing2.png");
+    background-size: 250px;
 }
 
 .navbar {
-    background: #131313;
+    background: #0d0d0d;
     height: 50px;
     display:flex;
     justify-content: center;
