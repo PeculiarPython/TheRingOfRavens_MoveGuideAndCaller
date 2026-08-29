@@ -1,3 +1,5 @@
+/* Global Styles */
+
 * {
     box-sizing: border-box;
     margin:0;
@@ -85,13 +87,27 @@ html, body {
     transition: all 0.3s ease;
 }
 
-.main {
+.footer {
+    color: #eca742;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    font-size: 0.7rem;
+}
+
+
+
+
+/* Homepage */
+
+.main_homepage {
        width: 60%;
        align-items: center;
        justify-self: center;
 }
 
-.main__container {
+.main_homepage__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -106,7 +122,9 @@ html, body {
     gap: 2rem;
 }
 
-.main__sidebar {
+
+/* Right Content */
+.main_homepage__rightcontent {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -116,14 +134,13 @@ html, body {
 .changelog {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .changelog h2 {
     color: #eca742;
     font-size: 2rem;
     font-family: calibri;
-    margin: 0;
+    margin-top: 1rem;
 }
 
 .changelog__box {
@@ -183,68 +200,34 @@ html, body {
     margin: 0;
 }
 
-.main__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 60px 40px;
-}
-
-.main__content h1 {
-    font-size: 2rem;
-    background-color: #eca742;
-    background-image: linear-gradient(to top, #eca742 0%, #000 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    font-family: 'Arial Black';
-}
-
-.main__content h2 {
-     font-size: 5rem;
-    background-color: #eca742;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    font-family:'Arial Rounded MT Bold';
-}
-
-.main__content h3 {
-    font-size: 1rem;
-    background-color: #eca742;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent;
-    font-family:Century Gothic;
-     margin-top: 1rem;
-}
-
-.main__content p {
-    margin-top: 4rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #f3c787;
-}
-
 .showcase__gallery {
     display: flex;
     flex-direction: column;
     max-width: 600px;
 }
 
-.showcase__gallery h2 {
+.showcase__gallery h1 {
     color: #eca742;
     font-size: 2.5rem;
     font-family: calibri;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     align-self: center;
+}
+
+.MonthFact {
+    color: #f3c787;
+    font-size: 1rem;
+    font-family: calibri;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.showcase__gallery h3 {
+    color: #f3c787;
+    font-size: 0.8rem;
+    font-family: calibri;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .showcase__gallery .gallery__img {
@@ -256,7 +239,12 @@ html, body {
     font-size: 0.9rem;
     font-family: calibri;
     font-size: 0;
-    margin-top: -0.8rem
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+    margin-top: -1rem;
 }
 
 .showcase__gallery p::before {
@@ -281,4 +269,137 @@ html, body {
         opacity: 1;
         font-size: 0.9rem;
     }
+}
+
+
+/* Left Content */
+.main_homepage__leftcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 40px;
+}
+
+.main_homepage__leftcontent h1 {
+    font-size: 2rem;
+    background-color: #eca742;
+    background-image: linear-gradient(to top, #eca742 0%, #000 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    font-family: 'Arial Black';
+}
+
+.main_homepage__leftcontent h2 {
+     font-size: 5rem;
+    background-color: #eca742;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    font-family:'Arial Rounded MT Bold';
+}
+
+.main_homepage__leftcontent h3 {
+    font-size: 1rem;
+    background-color: #eca742;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    font-family:Century Gothic;
+     margin-top: 1rem;
+}
+
+.main_homepage__leftcontent p {
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f3c787;
+}
+
+
+
+
+/* Instructor Page */
+
+.main_routinepage {
+       width: 60%;
+       align-items: center;
+       justify-self: center;
+}
+
+.main_routinepage__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-self: center;
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    gap: 2rem;
+}
+
+
+
+
+
+/* Guidebook Page */
+
+.main_guidepage {
+       width: 100%;
+       align-items: center;
+       justify-self: center;
+       padding: 0 20px;
+}
+
+.main_guidepage__container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 2.7fr;
+    column-gap: 20px;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 94vh;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Section 1 */
+.main_guidepage__categoryPanel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/* Section 2 */
+.main_guidepage__movePanel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+/* Section 3 */
+.main_guidepage__detailsPanel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
