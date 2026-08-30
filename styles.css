@@ -314,8 +314,20 @@ html, body {
      margin-top: 1rem;
 }
 
-.main_homepage__leftcontent p {
+.main_homepage__RavenBorder {
+    width: 130%;
     margin-top: 4rem;
+    margin-bottom: -0.5rem
+}
+
+.main_homepage__LAW {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.main_homepage__leftcontent p {
     font-size: 1rem;
     font-weight: 700;
     color: #f3c787;
